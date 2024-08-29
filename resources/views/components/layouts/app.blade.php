@@ -8,6 +8,8 @@
 
         @vite('resources/css/app.css')
 
+        @vite('resources/js/components/nav.js')
+
     </head>
     <body class="bg-gray-200/60">        
         <div class="min-h-screen flex flex-row">

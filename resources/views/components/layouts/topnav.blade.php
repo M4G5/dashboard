@@ -14,13 +14,13 @@
             </div>
             {{-- END MENU ICONOS --}}
             <div class="relative flex">
-                <div class="flex items-center gap-2 cursor-pointer btn-">
+                <div class="flex items-center gap-2 cursor-pointer" id="btn-profile">
                     <img src="{{ asset('images/group.png') }}" alt="User profile picture" class="w-10">
                     <i class="fa-solid fa-chevron-down fa-xs"></i>
                 </div>
                 {{-- SUBMENU PERFIL --}}
-                <div class="absolute top-12 right-0 bg-white rounded-md shadow-lg w-48" role="menu"
-                    aria-labelledby="profileMenu">
+                <div class="absolute top-12 right-0 bg-white rounded-md shadow-lg w-48 opacity-1 scale-95 transform transition-all duration-500 ease-in-out hidden" role="menu"
+                    aria-labelledby="profileMenu" id="profileMenu">
                     <div class="flex gap-3 p-2 items-center border-dashed border-b-[1px] border-b-gray-400">
                         <div class="w-10 ml-2">
                             <img src="{{ asset('images/group.png') }}" alt="Profile picture">
