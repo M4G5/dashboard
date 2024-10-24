@@ -1,9 +1,12 @@
 <header>
     <div class="bg-white h-14 border-l-2 border-b-2 flex justify-between items-center pl-4 pr-5">
         <div>
+            <i class="fa-solid fa-chevron-left fa-xl cursor-pointer" id="menuSide"></i>
+        </div>
+        {{-- <div>
             <i class="fa-solid fa-bars fa-xl md:hidden block"></i>
             <input type="text" class="bg-gray-200 p-2 rounded-xl md:block hidden" placeholder="Search here...">
-        </div>
+        </div> --}}
         <div class="flex items-center gap-5">
             {{-- MENU ICONOS --}}
             <div class="flex gap-6">

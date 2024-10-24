@@ -1,6 +1,44 @@
 /* @import "@fortawesome/fontawesome-free/css/all.css"; */
-@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import "@fortawesome/fontawesome-free/css/all.min.css";
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* .active {
+    @apply bg-sky-600;
+    @apply text-white;
+} */
+
+.img-logo{
+    width: 43px;
+    height: 43px;
+}
+
+.sidebar-close{
+    width: 3.5rem;
+    transition: width 0.5s ease-in-out;
+}
+.sidebar-open{
+    @apply w-44;
+    transition: width 0.5s ease-in-out;
+}
+ .right-row-menu{
+    transform: rotate(180deg);
+    transition: transform 500ms ease-in-out;
+ }
+ .left-row-menu{
+    transform: rotate(0deg);
+    transition: transform 500ms ease-in-out;
+ }
+
+ .txt-logo-hidden{
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0s 0.5s;
+ }
+ .txt-logo-visibility{
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.5s ease-out, visibility 0s 0.5s;
+ }

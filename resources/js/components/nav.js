@@ -1,16 +1,9 @@
+import {toggleMultiple,delayTransition} from '../functions.js';
 /* OPEN MENU PROFILE */
 const menuProfile = document.querySelector('#btn-profile');
 const profileMenu = document.querySelector('#profileMenu');
+const menuSidebar = document.querySelector("#menuSide");
 
-/* menuProfile.addEventListener('click', function() {
-    profileMenu.classList.toggle('hidden');
-    setTimeout(() => {
-        profileMenu.classList.toggle('opacity-0');
-        profileMenu.classList.toggle('scale-95');
-        profileMenu.classList.toggle('opacity-100');
-        profileMenu.classList.toggle('scale-100');
-    }, 10);
-}); */
 menuProfile.addEventListener('click', function() {
     if (!profileMenu.classList.contains('hidden')) {
         // Si el menú está visible, primero se anima la salida
@@ -38,3 +31,14 @@ document.addEventListener('click', function(event){
 
     }
 });
+
+
+// BOTON MENU (burguer) LATERAL
+const asideMenu = document.querySelector('#asideMenu');
+const logo = document.querySelector('#text-logo');
+const arow = document.querySelector('#menuSide');
+menuSidebar.addEventListener('click', function(){
+    delayTransition([asideMenu,logo,arow],'sidebar-close','txt-logo-hidden','right-row-menu','sidebar-open','txt-logo-visibility','left-row-menu');
+});
+
+

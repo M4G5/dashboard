@@ -8,6 +8,7 @@
 
         @vite('resources/css/app.css')
 
+        @vite('resources/js/functions.js')
         @vite('resources/js/components/nav.js')
 
     </head>
